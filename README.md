@@ -1,2 +1,21 @@
 # ServiceBusDemo
 A repository containing publisher and consumer of azure service bus topic(s).
+
+ENV
+
+# Environment file for user-defined variables in docker-compose.yml
+
+# 1. CONFIG_PATH: Path to Config.json file
+# Ex: CONFIG_PATH="C:\\Config\\Config.json"
+CONFIG_PATH="/Users/vishardupadhyay/Desktop/Repos/Learning/ServiceBusDemo/Emulator/config.json"
+
+# 2. ACCEPT_EULA: Pass 'Y' to accept license terms for SQL Server Linux and Service Bus emulator.
+# Service Bus emulator EULA : https://github.com/Azure/azure-service-bus-emulator-installer/blob/main/EMULATOR_EULA.txt
+# SQL Server Linux EULA : https://go.microsoft.com/fwlink/?LinkId=746388
+ACCEPT_EULA="Y"
+
+# 3. MSSQL_SA_PASSWORD to be filled by user as per policy
+MSSQL_SA_PASSWORD="Password"
+
+# 4. Port on which emulator will expose Management & Health-check APIs
+EMULATOR_HTTP_PORT=5300
